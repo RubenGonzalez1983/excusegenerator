@@ -28825,7 +28825,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.onload = function () {
-  function excuse() {
+  document.querySelector("#btn").addEventListener("click", function () {
+    document.querySelector("excuse").innerHTML = generateExcuse();
+  });
+
+  var generateExcuse = function generateExcuse() {
     var who = ["An alien", "A zombie", "A wizard", "Charlie Sheen", "Mike Tyson"];
     var action = ["smoked", "ate", "pulverized", "teletransported", "punched"];
     var what = ["my car", "the tires of my bike", "my uber driver's head", "my face", "my horse"];
@@ -28837,13 +28841,8 @@ window.onload = function () {
     var excuse = who[randomWhoIndex] + " " + action[randomActionIndex] + " " + what[randomWhatIndex] + " " + when[randomWhenIndex];
     return excuse;
     console.log(excuse);
-  }
-
-  var p = document.getElementById("excuse");
-  p.innerHTML = excuse();
-};
-
-console.log("Hello Rigo from the console!");
+  };
+}; //console.log("Hello Rigo from the console!");
 
 /***/ }),
 
