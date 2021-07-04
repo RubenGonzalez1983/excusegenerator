@@ -28825,9 +28825,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.onload = function () {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  function excuse() {
+    var who = ["An alien", "A zombie", "A wizard", "Charlie Sheen", "Mike Tyson"];
+    var action = ["smoked", "ate", "pulverized", "teletransported", "punched"];
+    var what = ["my car", "the tires of my bike", "my uber driver's head", "my face", "my horse"];
+    var when = ["when I woke up from my 5th nap of the day.", "on my way to a bull ride competition", "when I was climbing the Himalayas", "when I was making a hip hop album with Flo-Rida", ""];
+    var randomWhoIndex = Math.floor(Math.random() * who.length);
+    var randomActionIndex = Math.floor(Math.random() * action.length);
+    var randomWhatIndex = Math.floor(Math.random() * what.length);
+    var randomWhenIndex = Math.floor(Math.random() * when.length);
+    var excuse = who[randomWhoIndex] + " " + action[randomActionIndex] + " " + what[randomWhatIndex] + " " + when[randomWhenIndex];
+    return excuse;
+    console.log(excuse);
+  }
+
+  var p = document.getElementById("excuse");
+  p.innerHTML = excuse();
 };
+
+console.log("Hello Rigo from the console!");
 
 /***/ }),
 
@@ -28893,8 +28909,8 @@ module.exports = content.locals || {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /workspace/vanillajs-hello/node_modules/error-overlay-webpack-plugin/lib/entry-basic.js */"./node_modules/error-overlay-webpack-plugin/lib/entry-basic.js");
-__webpack_require__(/*! /workspace/vanillajs-hello/node_modules/error-overlay-webpack-plugin/lib/entry-devserver.js */"./node_modules/error-overlay-webpack-plugin/lib/entry-devserver.js");
+__webpack_require__(/*! /workspace/excusegenerator/node_modules/error-overlay-webpack-plugin/lib/entry-basic.js */"./node_modules/error-overlay-webpack-plugin/lib/entry-basic.js");
+__webpack_require__(/*! /workspace/excusegenerator/node_modules/error-overlay-webpack-plugin/lib/entry-devserver.js */"./node_modules/error-overlay-webpack-plugin/lib/entry-devserver.js");
 module.exports = __webpack_require__(/*! ./src/app.js */"./src/app.js");
 
 
