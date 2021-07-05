@@ -6,8 +6,8 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  document.querySelector("#btn").addEventListener("click", () => {
-    document.querySelector("excuse").innerHTML = generateExcuse();
+  document.querySelector("#newexcuse").addEventListener("click", () => {
+    document.querySelector("#excuse").innerHTML = generateExcuse();
   });
 
   let generateExcuse = () => {
@@ -50,8 +50,8 @@ window.onload = () => {
       what[randomWhatIndex] +
       " " +
       when[randomWhenIndex];
-    return excuse;
     console.log(excuse);
+    return excuse;
   };
 };
 //console.log("Hello Rigo from the console!");
