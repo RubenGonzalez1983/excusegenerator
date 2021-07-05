@@ -18,20 +18,25 @@ window.onload = () => {
       "Charlie Sheen",
       "Mike Tyson"
     ];
-    let action = ["smoked", "ate", "pulverized", "teletransported", "punched"];
+    let action = [
+      "smoked",
+      "ate",
+      "pulverized",
+      "teletransported",
+      "vandalized"
+    ];
     let what = [
-      "my car",
+      "my computer",
       "the tires of my bike",
       "my uber driver's car",
-      "my face",
+      "my go-kart",
       "my horse"
     ];
     let when = [
       "when I woke up from my 5th nap of the day.",
       "on my way to a bull ride competition",
       "when I was climbing the Himalayas",
-      "when I was making a hip hop album with Flo-Rida",
-      ""
+      "when I was making a hip hop album with Flo-Rida"
     ];
     let randomWhoIndex = Math.floor(Math.random() * who.length);
     let randomActionIndex = Math.floor(Math.random() * action.length);
