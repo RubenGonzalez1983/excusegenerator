@@ -22,7 +22,7 @@ window.onload = () => {
     let what = [
       "my car",
       "the tires of my bike",
-      "my uber driver's head",
+      "my uber driver's car",
       "my face",
       "my horse"
     ];
